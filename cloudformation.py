@@ -1,4 +1,4 @@
-import awscli.customizations.cloudformation.artifact_exporter
+import awscli.customizations.cloudformation.artifact_exporter as artifact_exporter
 import os
 
 org_make_abs_path = artifact_exporter.make_abs_path
