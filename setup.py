@@ -1,6 +1,5 @@
 from setuptools import setup
 from setuptools.command.install import install
-from subprocess import call
 from os import system
 
 class CustomInstall(install):
