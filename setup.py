@@ -5,7 +5,6 @@ from os import system
 
 class CustomInstall(install):
     def run(self):
-        print 'CustomInstall'
         install.run(self)
         system("aws configure set plugins.cloudformation cloudformation")
 
