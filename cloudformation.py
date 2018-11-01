@@ -1,5 +1,6 @@
 from awscli.customizations.cloudformation import artifact_exporter
-from os.path import join, exists, isabs, environ
+from os.path import join, exists, isabs
+from os import environ
 
 org_make_abs_path = artifact_exporter.make_abs_path
 
