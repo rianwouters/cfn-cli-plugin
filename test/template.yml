@@ -1,0 +1,11 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: Include transform test
+Resources:
+  TemplateResource:
+    Type: AWS::CloudFormation::Stack
+    Properties:
+    TemplateURL: nested.yml
+  Fn::Transform:
+    Name: AWS::Include
+    Parameters:
+      Location: included.yml

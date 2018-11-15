@@ -1,0 +1,4 @@
+IncludedResource:
+  Type: AWS::CloudFormation::Stack
+  Properties:
+    TemplateURL: nested.yml
