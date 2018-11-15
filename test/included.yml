@@ -2,3 +2,7 @@ IncludedResource:
   Type: AWS::CloudFormation::Stack
   Properties:
     TemplateURL: nested.yml
+  Fn::Transform:
+    Name: AWS::Include
+    Parameters:
+      Location: included.yml

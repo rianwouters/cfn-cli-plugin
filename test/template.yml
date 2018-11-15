@@ -4,7 +4,7 @@ Resources:
   TemplateResource:
     Type: AWS::CloudFormation::Stack
     Properties:
-    TemplateURL: nested.yml
+      TemplateURL: nested.yml
   Fn::Transform:
     Name: AWS::Include
     Parameters:
