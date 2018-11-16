@@ -1,4 +1,4 @@
-# Add search paths to ```aws cloudformation package``` 
+# Solutions for selected ```cloudformation package``` issues
 
 ## Introduction
 This AWS CLI plugin implements the following CloudFormation package command features:
