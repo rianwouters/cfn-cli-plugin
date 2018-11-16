@@ -25,14 +25,14 @@ def make_abs_path(base_path, path):
     return abs_path
 
 def interpolate_local_includes(self, template_dict):
-    self.includes = []
     if isinstance(template_dict, dict):
         for key, val in template_dict.items():
             if key == "Fn::Transform" and val.get("Name", None) == "AWS::Include":
                 include = IncludeTransform(self.template_dir, val)
                 if include.local():
                     del template_dict[key]
-                    template_dict.update(include.load())
+                    val = include.load()
+                    template_dict.update(val)
             self.export_global_artifacts(val)
     elif isinstance(template_dict, list):
         for val in template_dict:

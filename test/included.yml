@@ -5,4 +5,4 @@ IncludedResource:
   Fn::Transform:
     Name: AWS::Include
     Parameters:
-      Location: included.yml
+      Location: nested.yml
