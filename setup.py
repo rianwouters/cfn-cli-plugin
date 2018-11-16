@@ -11,10 +11,12 @@ setup(
     name='awscli-plugins',
     version='0.1',
     py_modules=[
-        'cloudformation'
+        'cloudformation',
+        'package.search_path',
+        'package.local_includes'
     ],
     install_requires=[
-        'awscli',
+        'awscli'
     ],
     cmdclass={
         'install': CustomInstall
