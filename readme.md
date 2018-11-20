@@ -43,8 +43,12 @@ Both issues are solved by interpolating the included local files instead of uplo
 This way, the package command will also upload the files recursively referenced by the included files, and expand any shortform intrinsic function.  
 
 ## Prerequisites
-- python
+- python 2.7
 - pip
 
 ## Installation
 ```pip install -U git+https://github.com/rianwouters/cfn-cli-plugin```
+
+Note: On windows the AWS CLI may be installed through the Windows installer,
+typically in `C:\Program Files\Amazon\AWSCLI\aws.exe`. In that case run, the CLI from the `python27\scripts` directory or add it to your `PATH`.
+ 
